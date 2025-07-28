@@ -1,35 +1,60 @@
 # Discord News Bot 🇦🇷
 
-Un bot de Discord hecho en Python que publica automáticamente las últimas noticias de [argentina.gob.ar/noticias](https://www.argentina.gob.ar/noticias).
+A Discord bot made in Python that automatically posts the latest news from [argentina.gob.ar/noticias](https://www.argentina.gob.ar/noticias).
 
-## 🚀 Cómo usarlo
+## 🚀 How to use it
 
-1. Cloná el repo y navegá al proyecto.
-2. Instalá las dependencias:
+1. Clone the repo and navigate to the project:
+   ```bash
+   git clone https://github.com/your-username/discord-news-bot.git
+   cd discord-news-bot
+   ```
+
+2. (Optional but recommended) Create a virtual environment:
+   
+   **Windows:**
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate
+   ```
+   **macOS/Linux:**
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+
+3. Install the dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-3. Copiá el archivo `.env.example` como `.env` y agregá tu token de Discord y el ID del canal.
-4. Ejecutá el bot:
+
+4. Create a `.env` file and add your Discord bot token and channel ID:
+   ```env
+   DISCORD_TOKEN=your_token_here
+   CHANNEL_ID=your_channel_id_here
+   ```
+
+5. Run the bot:
    ```bash
    python bot.py
    ```
 
-## 🧠 Cómo funciona
-- Scrapea la web oficial de noticias.
-- Verifica cada 30 minutos si hay novedades.
-- Publica solo noticias nuevas usando un registro local.
+## 🧠 How it works
+- Scrapes the official news website.
+- Checks for updates every 30 minutes.
+- Posts only new news using a local registry.
 
-## 📦 Archivos
-- `bot.py`: Lógica principal del bot.
-- `scraper.py`: Extrae las noticias.
-- `utils.py`: Carga y guarda las URLs ya posteadas.
-- `.env`: Configuración secreta.
-- `posted_news.json`: Registro de URLs posteadas.
+## 📦 Files
+- `bot.py`: Main bot logic.
+- `scraper.py`: Extracts news.
+- `utils.py`: Loads and saves already posted URLs.
+- `posted_news.json`: Logs posted URLs.
+- `.env`: Stores your token and channel ID.
+- `requirements.txt`: Project dependencies.
+- `.gitignore`: Prevents sensitive files from being committed.
 
 ---
 
-Creado por Leivur ✨
+Created by Leivur ✨
 
-> Nota: Este proyecto no está afiliado oficialmente al Gobierno de Argentina.
-"# noticias-argentina" 
+> ⚠️ This project is not officially affiliated with the Government of Argentina.
