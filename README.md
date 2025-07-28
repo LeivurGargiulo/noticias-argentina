@@ -1,35 +1,31 @@
 # Discord News Bot 🇦🇷
 
-Un bot de Discord hecho en Python que publica automáticamente las últimas noticias de [argentina.gob.ar/noticias](https://www.argentina.gob.ar/noticias).
+A Discord bot made in Python that automatically posts the latest news from [argentina.gob.ar/noticias](https://www.argentina.gob.ar/noticias).
 
-## 🚀 Cómo usarlo
+## 🚀 How to use it
 
-1. Cloná el repo y navegá al proyecto.
-2. Instalá las dependencias:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Copiá el archivo `.env.example` como `.env` y agregá tu token de Discord y el ID del canal.
-4. Ejecutá el bot:
-   ```bash
-   python bot.py
-   ```
+1. Clone the repo and navigate to the project.
+2. Install the dependencies:
+```bash
+pip install -r requirements.txt
+```
+3. Copy the `.env.example` file as `.env` and add your Discord token and channel ID.
+4. Run the bot:
+```bash
+python bot.py
+```
 
-## 🧠 Cómo funciona
-- Scrapea la web oficial de noticias.
-- Verifica cada 30 minutos si hay novedades.
-- Publica solo noticias nuevas usando un registro local.
+## 🧠 How it works
+- Scrapes the official news website.
+- Checks for updates every 30 minutes.
+- Posts only new news using a local registry.
 
-## 📦 Archivos
-- `bot.py`: Lógica principal del bot.
-- `scraper.py`: Extrae las noticias.
-- `utils.py`: Carga y guarda las URLs ya posteadas.
-- `.env`: Configuración secreta.
-- `posted_news.json`: Registro de URLs posteadas.
+## 📦 Files
+- `bot.py`: Main bot logic.
+- `scraper.py`: Extracts news.
+- `utils.py`: Loads and saves already posted URLs.
+- `posted_news.json`: Logs posted URLs.
 
 ---
 
-Creado por Leivur ✨
-
-> Nota: Este proyecto no está afiliado oficialmente al Gobierno de Argentina.
-"# noticias-argentina" 
+Created by Leivur ✨
